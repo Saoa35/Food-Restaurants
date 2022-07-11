@@ -11,3 +11,8 @@ const firebaseConfig = {
   };
 
   firebase.initializeApp(firebaseConfig);
+
+  $('.swiper-wrapper').slick({
+    autoplay: true,
+    autoplaySpeed: 2000
+  });
