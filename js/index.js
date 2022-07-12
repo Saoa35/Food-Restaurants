@@ -1,5 +1,3 @@
-// import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
-
 const firebaseConfig = {
     apiKey: "AIzaSyC9HqG6NteqYoqrcz46rOxBWdhwSc1UJD4",
     authDomain: "food-rest-d52ab.firebaseapp.com",
@@ -12,7 +10,19 @@ const firebaseConfig = {
 
   firebase.initializeApp(firebaseConfig);
 
+  let login = localStorage.getItem('deliveryFood');
+
+  const getData = async (url) => {
+    
+  }
+
+  const init = () => {
+
+  }
+
+
   $('.swiper-wrapper').slick({
     autoplay: true,
-    autoplaySpeed: 2000
+    autoplaySpeed: 2000,
+    arrows: false
   });
