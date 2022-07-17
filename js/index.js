@@ -13,8 +13,8 @@ const firebaseConfig = {
   let login = localStorage.getItem('deliveryFood');
 
   const getData = async (key) => {
-      const data = await firebase.database().ref().child(key).once('value').val()
-      return data;
+      const data = await firebase.database().ref().child(key).once('value')
+      return data.val();
   }
 
   const init = () => {
