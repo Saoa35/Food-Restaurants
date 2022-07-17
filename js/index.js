@@ -17,8 +17,14 @@ const firebaseConfig = {
       return data.val();
   }
 
-  const init = () => {
+  const createCardRestaurant = (restaurant) => {
+    
+  }
 
+  const init = () => {
+    getData('partners').then(data => {
+      console.log(data);
+    })
   }
 
 
