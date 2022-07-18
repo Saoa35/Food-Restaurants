@@ -18,7 +18,26 @@ const firebaseConfig = {
   }
 
   const createCardRestaurant = (restaurant) => {
-    
+
+    const card = `
+        <a class="card card-restaurant" data-products="//">
+        <img src="" alt="image" class="card-image"/>
+        <div class="card-text">
+          <div class="card-heading">
+            <h3 class="card-title"> /// </h3>
+            <span class="card-tag tag"> /// </span>
+          </div>
+          <div class="card-info">
+            <div class="rating">
+              ///
+            </div>
+            <div class="price">Oт /// </div>
+            <div class="category"> /// </div>
+          </div>
+        </div>
+      </a>
+    `
+
   }
 
   const init = () => {
