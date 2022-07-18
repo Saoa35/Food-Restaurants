@@ -10,6 +10,10 @@ const firebaseConfig = {
 
   firebase.initializeApp(firebaseConfig);
 
+  //
+    const cardsRestaurants = document.querySelector('.cards-restaurants');
+  // 
+
   let login = localStorage.getItem('deliveryFood');
 
   const getData = async (key) => {
