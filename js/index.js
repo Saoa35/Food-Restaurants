@@ -22,25 +22,25 @@ const firebaseConfig = {
     const { image, name, price, stars, products, kitchen, time_of_delivery } = restaurant;
 
     const card = `
-        <a class="card card-restaurant" data-products="//">
-        <img src="" alt="image" class="card-image"/>
+        <a class="card card-restaurant" data-products="${products}">
+        <img src="${image}" alt="image" class="card-image"/>
         <div class="card-text">
           <div class="card-heading">
-            <h3 class="card-title"> /// </h3>
-            <span class="card-tag tag"> /// </span>
+            <h3 class="card-title"> ${name} </h3>
+            <span class="card-tag tag"> ${time_of_delivery} </span>
           </div>
           <div class="card-info">
             <div class="rating">
-              ///
+              ${stars}
             </div>
-            <div class="price">Oт /// </div>
-            <div class="category"> /// </div>
+            <div class="price">Oт $${price} </div>
+            <div class="category"> ${kitchen} </div>
           </div>
         </div>
       </a>
-    `
+    `;
 
-  }
+  };
 
   const init = () => {
     getData('partners').then(data => {
