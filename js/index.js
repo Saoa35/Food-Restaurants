@@ -51,7 +51,26 @@ const firebaseConfig = {
   const createCardGood = () => {
     const card = document.createElement('div');
     card.className = 'card';
-  }
+
+    const good = `
+      <img src="//" alt="image" class="card-image"/>
+      <div class="card-text">
+        <div class="card-heading">
+          <h3 class="card-title card-title-reg"> /// </h3>
+        </div>
+        <div class="card-info">
+          <div class="ingredients"> /// </div>
+        </div>
+        <div class="card-buttons">
+          <button class="button button-primary button-add-cart" id="//">
+            <span class="button-card-text">В корзину</span>
+            <span class="button-cart-svg"></span>
+          </button>
+          <strong class="card-price-bold card-price"> /// </strong>
+        </div>
+      </div>
+    `;
+  };
 
 
   const init = () => {
