@@ -44,11 +44,22 @@ const firebaseConfig = {
       </a>
     `;
 
+    cardsRestaurants.insertAdjacentHTML('beforeend', card);
   };
+
+
+  const createCardGood = () => {
+    const card = document.createElement('div');
+    card.className = 'card';
+  }
+
 
   const init = () => {
     getData('partners').then(data => {
-      console.log(data);
+      cardsRestaurants.firstElementChild.remove();
+      data.forEach(item => {
+        createCardRestaurant(item);
+      });
     })
   }
 
@@ -58,3 +69,5 @@ const firebaseConfig = {
     autoplaySpeed: 2000,
     arrows: false
   });
+
+  init();
