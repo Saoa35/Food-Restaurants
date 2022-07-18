@@ -19,6 +19,8 @@ const firebaseConfig = {
 
   const createCardRestaurant = (restaurant) => {
 
+    const { image, name, price, stars, products, kitchen, time_of_delivery } = restaurant;
+
     const card = `
         <a class="card card-restaurant" data-products="//">
         <img src="" alt="image" class="card-image"/>
