@@ -48,28 +48,30 @@ const firebaseConfig = {
   };
 
 
-  const createCardGood = () => {
+  const createCardGood = ({ description, image, name, price, id }) => {
     const card = document.createElement('div');
     card.className = 'card';
 
     const good = `
-      <img src="//" alt="image" class="card-image"/>
+      <img src="${image}" alt="image" class="card-image"/>
       <div class="card-text">
         <div class="card-heading">
-          <h3 class="card-title card-title-reg"> /// </h3>
+          <h3 class="card-title card-title-reg"> ${name} </h3>
         </div>
         <div class="card-info">
-          <div class="ingredients"> /// </div>
+          <div class="ingredients"> ${description} </div>
         </div>
         <div class="card-buttons">
-          <button class="button button-primary button-add-cart" id="//">
+          <button class="button button-primary button-add-cart" id="${id}">
             <span class="button-card-text">В корзину</span>
             <span class="button-cart-svg"></span>
           </button>
-          <strong class="card-price-bold card-price"> /// </strong>
+          <strong class="card-price-bold card-price"> $${price} </strong>
         </div>
       </div>
     `;
+
+    card.insertAdjacentHTML('beforeend', good);
   };
 
 
