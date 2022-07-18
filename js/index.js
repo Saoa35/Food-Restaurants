@@ -12,6 +12,7 @@ const firebaseConfig = {
 
   //
     const cardsRestaurants = document.querySelector('.cards-restaurants');
+    const cardsMenu = document.querySelector('.cards-menu');
   // 
 
   let login = localStorage.getItem('deliveryFood');
@@ -72,6 +73,7 @@ const firebaseConfig = {
     `;
 
     card.insertAdjacentHTML('beforeend', good);
+    cardsMenu.insertAdjacentElement('beforeend', card);
   };
 
 
