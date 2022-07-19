@@ -13,6 +13,8 @@ const firebaseConfig = {
   //
     const cardsRestaurants = document.querySelector('.cards-restaurants');
     const cardsMenu = document.querySelector('.cards-menu');
+    const containerPromo = document.querySelector('.container-promo');
+    const restaurants = document.querySelector('.restaurants');
   // 
 
   let login = localStorage.getItem('deliveryFood');
@@ -80,8 +82,14 @@ const firebaseConfig = {
   const openGoods = (event) => {
     const target = event.target;
 
-    if(login) {
+    if(!login) {
       const restaurant = target.closest('.card-restaurant');
+
+      if(restaurant) {
+        cardsMenu.textContent = '';
+        containerPromo.classList.add('hide');
+        restaurants.classList.add('hide');
+      }
     }
   };
 
