@@ -77,23 +77,32 @@ const firebaseConfig = {
   };
 
 
+  const openGoods = (event) => {
+    const target = event.target;
+
+    if(login) {
+      const restaurant = target.closest('.card-restaurant');
+    }
+  };
+
+
   const init = () => {
     getData('partners').then(data => {
       cardsRestaurants.firstElementChild.remove();
       data.forEach(item => {
-        createCardRestaurant(item);
+        createCardRestaurant(item); // data.forEach(createCardRestaurant);
       });
-    })
-  }
+    });
+
+    cardsRestaurants.addEventListener('click', openGoods);
+  };
 
 
   $(document).ready(function(){
-
     $('.swiper-wrapper').slick({
       autoplay: true,
       autoplaySpeed: 2000,
       arrows: false
-
     });
   });
 
