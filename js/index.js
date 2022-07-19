@@ -11,10 +11,13 @@ const firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
 
   //
+
+    const modalAuth = document.querySelector('.modal-auth');
     const cardsRestaurants = document.querySelector('.cards-restaurants');
     const cardsMenu = document.querySelector('.cards-menu');
     const containerPromo = document.querySelector('.container-promo');
     const restaurants = document.querySelector('.restaurants');
+    const menu = document.querySelector('.menu');
   // 
 
   let login = localStorage.getItem('deliveryFood');
@@ -22,6 +25,10 @@ const firebaseConfig = {
   const getData = async (key) => {
       const data = await firebase.database().ref().child(key).once('value')
       return data.val();
+  };
+
+  const toggleModalAuth = () => {
+    modalAuth.classList.toggle('is-open');
   }
 
   const createCardRestaurant = (restaurant) => {
@@ -82,14 +89,20 @@ const firebaseConfig = {
   const openGoods = (event) => {
     const target = event.target;
 
-    if(!login) {
+    if(login) {
       const restaurant = target.closest('.card-restaurant');
 
-      if(restaurant) {
+      if(!restaurant) {
         cardsMenu.textContent = '';
         containerPromo.classList.add('hide');
         restaurants.classList.add('hide');
-      }
+        menu.classList.remove('hide');
+
+        // console.log(restaurant.dataset.products);
+        getData(restaurant.dataset.products).then(data => data.forEach(createCardGood));
+      } 
+      }else {
+        toggleModalAuth();
     }
   };
 
