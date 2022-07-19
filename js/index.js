@@ -87,10 +87,14 @@ const firebaseConfig = {
   }
 
 
-  $('.swiper-wrapper').slick({
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: false
+  $(document).ready(function(){
+
+    $('.swiper-wrapper').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false
+
+    });
   });
 
   init();
