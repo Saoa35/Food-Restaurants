@@ -57,6 +57,7 @@ const firebaseConfig = {
     }
 
     buttonAuth.addEventListener('click', toggleModalAuth);
+    closeAuth.removeEventListener('click', toggleModalAuth);
     loginForm.addEventListener('submit', logIn);
 
   }
