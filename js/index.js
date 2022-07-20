@@ -27,6 +27,15 @@ const firebaseConfig = {
       return data.val();
   };
 
+
+  const notAuthorised = () => {
+
+    const logIn = (event) => {
+      event.preventDefault();
+    }
+
+  }
+
   const toggleModalAuth = () => {
     modalAuth.classList.toggle('is-open');
   }
@@ -101,7 +110,7 @@ const firebaseConfig = {
         // console.log(restaurant.dataset.products);
         getData(restaurant.dataset.products).then(data => data.forEach(createCardGood));
       } 
-      }else {
+    } else {
         toggleModalAuth();
     }
   };
