@@ -13,6 +13,9 @@ const firebaseConfig = {
   //
 
     const modalAuth = document.querySelector('.modal-auth');
+    const loginInput = document.querySelector('#login');
+    const logInForm = document.querySelector('#logInForm');
+
     const cardsRestaurants = document.querySelector('.cards-restaurants');
     const cardsMenu = document.querySelector('.cards-menu');
     const containerPromo = document.querySelector('.container-promo');
@@ -27,12 +30,27 @@ const firebaseConfig = {
       return data.val();
   };
 
+  const valid = (str) => {
+    return str.length < 5;
+  }
+
 
   const notAuthorised = () => {
 
     const logIn = (event) => {
       event.preventDefault();
+      
+      if(valid(loginInput.value)) {
+
+        login = loginInput.value;
+        localStorage.setItem('deliveryFood', login);
+        toggleModalAuth();
+      } else {
+        loginInput.style.borderColor = 'red';
+      }
     }
+
+    logInForm.addEventListener('submit', logIn);
 
   }
 
