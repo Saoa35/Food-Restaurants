@@ -16,6 +16,7 @@ const firebaseConfig = {
     const loginInput = document.querySelector('#login');
     const loginForm = document.querySelector('#logInForm');
     const buttonAuth = document.querySelector('.button-auth');
+    const closeAuth = document.querySelector('.close-auth');
 
     const cardsRestaurants = document.querySelector('.cards-restaurants');
     const cardsMenu = document.querySelector('.cards-menu');
@@ -46,11 +47,16 @@ const firebaseConfig = {
         login = loginInput.value;
         localStorage.setItem('deliveryFood', login);
         toggleModalAuth();
+        buttonAuth.removeEventListener('click', toggleModalAuth);
+        closeAuth.removeEventListener('click', toggleModalAuth);
+        loginForm.removeEventListener('click', toggleModalAuth);
+
       } else {
         loginInput.style.borderColor = 'red';
       }
     }
 
+    buttonAuth.addEventListener('click', toggleModalAuth);
     loginForm.addEventListener('submit', logIn);
 
   }
