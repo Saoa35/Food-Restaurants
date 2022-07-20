@@ -14,7 +14,8 @@ const firebaseConfig = {
 
     const modalAuth = document.querySelector('.modal-auth');
     const loginInput = document.querySelector('#login');
-    const logInForm = document.querySelector('#logInForm');
+    const loginForm = document.querySelector('#logInForm');
+    const buttonAuth = document.querySelector('.button-auth');
 
     const cardsRestaurants = document.querySelector('.cards-restaurants');
     const cardsMenu = document.querySelector('.cards-menu');
@@ -31,7 +32,7 @@ const firebaseConfig = {
   };
 
   const valid = (str) => {
-    return str.length < 5;
+    return str.length > 5;
   }
 
 
@@ -50,9 +51,12 @@ const firebaseConfig = {
       }
     }
 
-    logInForm.addEventListener('submit', logIn);
+    loginForm.addEventListener('submit', logIn);
 
   }
+
+
+  const checkAuth = () => login ? 'authorised()' : notAuthorised();
 
   const toggleModalAuth = () => {
     modalAuth.classList.toggle('is-open');
@@ -145,6 +149,7 @@ const firebaseConfig = {
     cardsRestaurants.addEventListener('click', openGoods);
   };
 
+  checkAuth();
 
   $(document).ready(function(){
     $('.swiper-wrapper').slick({
