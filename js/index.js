@@ -12,12 +12,15 @@ const firebaseConfig = {
 
   //
 
+    const cartButton = document.querySelector('#cart-button');
     const modalAuth = document.querySelector('.modal-auth');
     const loginInput = document.querySelector('#login');
     const loginForm = document.querySelector('#logInForm');
     const buttonAuth = document.querySelector('.button-auth');
     const buttonOut = document.querySelector('.button-out');
     const closeAuth = document.querySelector('.close-auth');
+
+    const userName = document.querySelector('.user-name');
 
     const cardsRestaurants = document.querySelector('.cards-restaurants');
     const cardsMenu = document.querySelector('.cards-menu');
@@ -32,6 +35,18 @@ const firebaseConfig = {
 
   const cart = [];  // корзина
 
+  const loadCart = () => {
+    if(localStorage.getItem(login)) {
+      JSON.parse(localStorage.getItem(login)).forEach(item => {
+        cart.push();
+      })
+    }
+  };
+
+  const saveCart = () => {
+    localStorage.setItem(login, JSON.stringify(cart));
+  }
+
   const getData = async (key) => {
       const data = await firebase.database().ref().child(key).once('value')
       return data.val();
@@ -41,6 +56,12 @@ const firebaseConfig = {
     return str.length > 5;
   };
 
+  const returnMain = () => {
+    containerPromo.classList.remove('hide');
+    restaurants.classList.remove('hide');
+    menu.classList.add('hide');
+  }
+
 
   const authorised = () => {
 
@@ -49,13 +70,24 @@ const firebaseConfig = {
       cart.length = 0;
       localStorage.removeItem('deliveryFood');
       buttonAuth.style.display = '';
-      // userName.style.display = '';
+      userName.style.display = '';
       buttonOut.style.display = '';
-      // cartButton.style.display = '';
+      cartButton.style.display = '';
 
       buttonOut.removeEventListener('click', logOut);
 
+      checkAuth();
+      returnMain();
     };
+
+    userName.textContent = login;
+    buttonAuth.style.display = 'none';
+    userName.style.display = 'inline';
+    buttonOut.style.display = 'flex';
+    cartButton.style.display = 'flex';
+    buttonOut.addEventListener('click', logOut);
+
+    loadCart();
 
   };
 
@@ -177,6 +209,11 @@ const firebaseConfig = {
         createCardRestaurant(item); // data.forEach(createCardRestaurant);
       });
     });
+
+    cartButton.addEventListener('click', () => {
+      //renderCart();
+        // toggleModal();
+    })
 
     cardsRestaurants.addEventListener('click', openGoods);
   };
