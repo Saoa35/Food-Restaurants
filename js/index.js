@@ -52,6 +52,7 @@ const firebaseConfig = {
         closeAuth.removeEventListener('click', toggleModalAuth);
         loginForm.removeEventListener('click', toggleModalAuth);
         loginForm.reset();
+        checkAuth();
 
       } else {
         loginInput.style.borderColor = 'red';
