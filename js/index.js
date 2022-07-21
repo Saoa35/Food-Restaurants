@@ -16,6 +16,7 @@ const firebaseConfig = {
     const loginInput = document.querySelector('#login');
     const loginForm = document.querySelector('#logInForm');
     const buttonAuth = document.querySelector('.button-auth');
+    const buttonOut = document.querySelector('.button-out');
     const closeAuth = document.querySelector('.close-auth');
 
     const cardsRestaurants = document.querySelector('.cards-restaurants');
@@ -29,7 +30,7 @@ const firebaseConfig = {
   let login = localStorage.getItem('deliveryFood');
 
 
-  const cart = [];
+  const cart = [];  // корзина
 
   const getData = async (key) => {
       const data = await firebase.database().ref().child(key).once('value')
@@ -45,9 +46,18 @@ const firebaseConfig = {
 
     const logOut = () => {
       login = null;
-    }
+      cart.length = 0;
+      localStorage.removeItem('deliveryFood');
+      buttonAuth.style.display = '';
+      // userName.style.display = '';
+      buttonOut.style.display = '';
+      // cartButton.style.display = '';
 
-  }
+      buttonOut.removeEventListener('click', logOut);
+
+    };
+
+  };
 
 
   const notAuthorised = () => {
