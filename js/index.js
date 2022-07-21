@@ -23,6 +23,7 @@ const firebaseConfig = {
     const containerPromo = document.querySelector('.container-promo');
     const restaurants = document.querySelector('.restaurants');
     const menu = document.querySelector('.menu');
+
   // 
 
   let login = localStorage.getItem('deliveryFood');
@@ -50,24 +51,25 @@ const firebaseConfig = {
         buttonAuth.removeEventListener('click', toggleModalAuth);
         closeAuth.removeEventListener('click', toggleModalAuth);
         loginForm.removeEventListener('click', toggleModalAuth);
+        loginForm.reset();
 
       } else {
         loginInput.style.borderColor = 'red';
       }
-    }
+    };
 
     buttonAuth.addEventListener('click', toggleModalAuth);
-    closeAuth.removeEventListener('click', toggleModalAuth);
+    closeAuth.addEventListener('click', toggleModalAuth);
     loginForm.addEventListener('submit', logIn);
 
-  }
+  };
 
 
   const checkAuth = () => login ? 'authorised()' : notAuthorised();
 
   const toggleModalAuth = () => {
     modalAuth.classList.toggle('is-open');
-  }
+  };
 
   const createCardRestaurant = (restaurant) => {
 
@@ -130,7 +132,7 @@ const firebaseConfig = {
     if(login) {
       const restaurant = target.closest('.card-restaurant');
 
-      if(!restaurant) {
+      if(restaurant) {
         cardsMenu.textContent = '';
         containerPromo.classList.add('hide');
         restaurants.classList.add('hide');
