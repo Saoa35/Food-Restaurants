@@ -28,6 +28,9 @@ const firebaseConfig = {
 
   let login = localStorage.getItem('deliveryFood');
 
+
+  const cart = [];
+
   const getData = async (key) => {
       const data = await firebase.database().ref().child(key).once('value')
       return data.val();
@@ -35,6 +38,15 @@ const firebaseConfig = {
 
   const valid = (str) => {
     return str.length > 5;
+  };
+
+
+  const authorised = () => {
+
+    const logOut = () => {
+      login = null;
+    }
+
   }
 
 
@@ -66,7 +78,7 @@ const firebaseConfig = {
   };
 
 
-  const checkAuth = () => login ? 'authorised()' : notAuthorised();
+  const checkAuth = () => login ? authorised() : notAuthorised();
 
   const toggleModalAuth = () => {
     modalAuth.classList.toggle('is-open');
