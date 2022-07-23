@@ -201,6 +201,9 @@ const firebaseConfig = {
     }
   };
 
+  const renderCart = () => {
+    modalBody.textContent = '';
+  }
 
   const init = () => {
     getData('partners').then(data => {
@@ -211,7 +214,7 @@ const firebaseConfig = {
     });
 
     cartButton.addEventListener('click', () => {
-      //renderCart();
+      // renderCart();();
         // toggleModal();
     })
 
