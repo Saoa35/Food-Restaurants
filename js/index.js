@@ -207,6 +207,17 @@ const firebaseConfig = {
 
     cart.forEach(item => {
       const { id, title, cost, count } = item;
+      const itemCart = `
+        <div class='food-row'>
+          <span class="food-name">${title}</span>
+          <strong class="food-price">${cost}</strong>
+          <div class="food-counter">
+            <button class="counter-button counter-minus" data-id=${id}>-</button>
+            <span class="counter">${count}</span>
+            <button class="counter-button counter-plus" data-id=${id}>+</button>
+          </div>
+        </div>`
+      modalBody.insertAdjacentHTML('afterbegin', itemCart);
     })
   }
 
@@ -219,7 +230,7 @@ const firebaseConfig = {
     });
 
     cartButton.addEventListener('click', () => {
-      // renderCart();();
+      renderCart();
         // toggleModal();
     })
 
