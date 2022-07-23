@@ -21,6 +21,8 @@ const firebaseConfig = {
     const buttonOut = document.querySelector('.button-out');
     const closeAuth = document.querySelector('.close-auth');
 
+    const closeBin = document.querySelector('.close');
+
     const userName = document.querySelector('.user-name');
     const modalBody = document.querySelector('.modal-body');
 
@@ -200,13 +202,40 @@ const firebaseConfig = {
         restaurants.classList.add('hide');
         menu.classList.remove('hide');
 
-        // console.log(restaurant.dataset.products);
+       
         getData(restaurant.dataset.products).then(data => data.forEach(createCardGood));
       } 
     } else {
         toggleModalAuth();
     }
   };
+
+  const addToCart = (event) => {
+    const target = event.target;
+
+    const buttonAddToCart = target.closest('.button-add-cart');
+    if(buttonAddToCart) {
+      const card = target.closest('.card');
+      const title = card.querySelector('.card-title-reg').textContent;
+      const cost = card.querySelector('.card-price').textContent;
+      const id = buttonAddToCart.id;
+
+      const food = cart.find(item => item.id === id);
+
+      if(food) {
+        food.count += 1;
+      } else {
+        cart.push({
+          id, 
+          title, 
+          cost: +cost.replace('$', ''),
+          count: 1
+        })
+      }
+    }
+
+    saveCart();
+  }
 
   const renderCart = () => {
     modalBody.textContent = '';
@@ -225,9 +254,30 @@ const firebaseConfig = {
         </div>`
       modalBody.insertAdjacentHTML('afterbegin', itemCart);
     });
-    const totalPrice = cart.reduce((result, item) => result + (parseFloat(item.cost) * item.count), 0);
+    const totalPrice = cart.reduce((result, item) => {
+      return +result + (+item.cost * +item.count) 
+    }, 0);
     modalPrice.textContent = '$' + totalPrice;
   }
+
+  const changeCount =(event) => {
+    const target = event.target;
+
+    if(target.classList.contains('counter-button')) {
+      const food = cart.find(item => item.id === target.dataset.id);
+
+      if(target.classList.contains('counter-minus')) {
+        food.count--;
+        if(food.count == 0) {
+          cart.splice(cart.indexOf(food), 1);
+        }
+      }
+      if(target.classList.contains('counter-plus')) food.count++;
+      renderCart();
+    }
+    saveCart();
+  }
+
 
   const init = () => {
     getData('partners').then(data => {
@@ -242,7 +292,14 @@ const firebaseConfig = {
       toggleModal();
     })
 
+    modalBody.addEventListener('click', changeCount);
+
     cardsRestaurants.addEventListener('click', openGoods);
+
+    closeBin.addEventListener('click', toggleModal);
+
+    cardsMenu.addEventListener('click', addToCart);
+    
   };
 
   checkAuth();
