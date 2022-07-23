@@ -204,6 +204,10 @@ const firebaseConfig = {
 
   const renderCart = () => {
     modalBody.textContent = '';
+
+    cart.forEach(item => {
+      const { id, title, cost, count } = item;
+    })
   }
 
   const init = () => {
