@@ -21,6 +21,7 @@ const firebaseConfig = {
     const closeAuth = document.querySelector('.close-auth');
 
     const userName = document.querySelector('.user-name');
+    const modalBody = document.querySelector('.modal-body');
 
     const cardsRestaurants = document.querySelector('.cards-restaurants');
     const cardsMenu = document.querySelector('.cards-menu');
