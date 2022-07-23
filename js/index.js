@@ -218,7 +218,8 @@ const firebaseConfig = {
           </div>
         </div>`
       modalBody.insertAdjacentHTML('afterbegin', itemCart);
-    })
+    });
+    const totalPrice = cart.reduce((result, item) => result + (parseFloat(item.cost) * item.count), 0);
   }
 
   const init = () => {
