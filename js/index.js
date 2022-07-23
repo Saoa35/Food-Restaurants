@@ -28,6 +28,7 @@ const firebaseConfig = {
     const containerPromo = document.querySelector('.container-promo');
     const restaurants = document.querySelector('.restaurants');
     const menu = document.querySelector('.menu');
+    const modalPrice = document.querySelector('.modal-pricetag');
 
   // 
 
@@ -220,6 +221,7 @@ const firebaseConfig = {
       modalBody.insertAdjacentHTML('afterbegin', itemCart);
     });
     const totalPrice = cart.reduce((result, item) => result + (parseFloat(item.cost) * item.count), 0);
+    modalPrice.textContent = '$' + totalPrice;
   }
 
   const init = () => {
