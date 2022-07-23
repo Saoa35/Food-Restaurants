@@ -12,6 +12,7 @@ const firebaseConfig = {
 
   //
 
+    const modal = document.querySelector('.modal');
     const cartButton = document.querySelector('#cart-button');
     const modalAuth = document.querySelector('.modal-auth');
     const loginInput = document.querySelector('#login');
@@ -40,7 +41,7 @@ const firebaseConfig = {
   const loadCart = () => {
     if(localStorage.getItem(login)) {
       JSON.parse(localStorage.getItem(login)).forEach(item => {
-        cart.push();
+        cart.push(item);
       })
     }
   };
@@ -126,6 +127,10 @@ const firebaseConfig = {
 
   const toggleModalAuth = () => {
     modalAuth.classList.toggle('is-open');
+  };
+
+  const toggleModal = () => {
+    modal.classList.toggle('is-open');
   };
 
   const createCardRestaurant = (restaurant) => {
@@ -234,7 +239,7 @@ const firebaseConfig = {
 
     cartButton.addEventListener('click', () => {
       renderCart();
-        // toggleModal();
+      toggleModal();
     })
 
     cardsRestaurants.addEventListener('click', openGoods);
