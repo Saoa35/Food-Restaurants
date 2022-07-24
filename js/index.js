@@ -34,6 +34,11 @@
     const menu = document.querySelector('.menu');
     const modalPrice = document.querySelector('.modal-pricetag');
 
+    const restaurantTitle = document.querySelector('.restaurant-title');
+    const restaurantRating = document.querySelector('.rating');
+    const restaurantAverPrice = document.querySelector('.price');
+    const restaurantCategory = document.querySelector('.category');
+
   // 
 
   let login = localStorage.getItem('deliveryFood');
