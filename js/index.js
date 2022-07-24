@@ -39,6 +39,10 @@
     const restaurantAverPrice = document.querySelector('.price');
     const restaurantCategory = document.querySelector('.category');
 
+    // const cardTitle = document.querySelector('.card-heading');
+
+    // console.log(cardTitle);
+
   // 
 
   let login = localStorage.getItem('deliveryFood');
@@ -193,6 +197,7 @@
 
     card.insertAdjacentHTML('beforeend', good);
     cardsMenu.insertAdjacentElement('beforeend', card);
+
   };
 
 
@@ -202,12 +207,33 @@
     if(login) {
       const restaurant = target.closest('.card-restaurant');
 
+      const cardText = restaurant.lastElementChild;
+      const cardHeading = cardText.firstElementChild;
+      const cardTitle = cardHeading.firstElementChild.textContent;
+
+      const cardInfo = cardText.lastElementChild;
+      const rating = cardInfo.firstElementChild;
+
+      const price = rating.nextElementSibling;
+
+      const category = cardInfo.lastElementChild;
+
+
+
+      // console.log(price);
+
       if(restaurant) {
         cardsMenu.textContent = '';
         containerPromo.classList.add('hide');
         restaurants.classList.add('hide');
         menu.classList.remove('hide');
 
+        restaurantTitle.textContent = cardTitle;
+        restaurantRating.textContent = rating.textContent;
+        restaurantAverPrice.textContent = price.textContent
+        restaurantCategory.textContent = category.textContent
+
+        // const restaurantCategory = document.querySelector('.category');
        
         getData(restaurant.dataset.products).then(data => data.forEach(createCardGood));
       } 
