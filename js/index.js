@@ -70,8 +70,11 @@
 
 
 
-  function cleanBasket () {
+  function cleanBasket() {
     modalBody.textContent = '';
+    modalPrice.textContent = '$0';
+    localStorage.removeItem(login);
+    document.location.reload();
   }
 
 
