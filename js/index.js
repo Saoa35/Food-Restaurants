@@ -39,10 +39,6 @@
     const restaurantAverPrice = document.querySelector('.price');
     const restaurantCategory = document.querySelector('.category');
 
-    // const cardTitle = document.querySelector('.card-heading');
-
-    // console.log(cardTitle);
-
   // 
 
   let login = localStorage.getItem('deliveryFood');
