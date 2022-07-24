@@ -218,10 +218,6 @@
 
       const category = cardInfo.lastElementChild;
 
-
-
-      // console.log(price);
-
       if(restaurant) {
         cardsMenu.textContent = '';
         containerPromo.classList.add('hide');
@@ -232,8 +228,6 @@
         restaurantRating.textContent = rating.textContent;
         restaurantAverPrice.textContent = price.textContent
         restaurantCategory.textContent = category.textContent
-
-        // const restaurantCategory = document.querySelector('.category');
        
         getData(restaurant.dataset.products).then(data => data.forEach(createCardGood));
       } 
