@@ -280,8 +280,6 @@
   }
 
   function cleanBasket() {
-    modalBody.textContent = '';
-    modalPrice.textContent = '$0';
     localStorage.removeItem(login);
     cart.length = 0;
     renderCart();
