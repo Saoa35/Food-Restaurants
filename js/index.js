@@ -1,4 +1,4 @@
-const firebaseConfig = {
+  const firebaseConfig = {
     apiKey: "AIzaSyC9HqG6NteqYoqrcz46rOxBWdhwSc1UJD4",
     authDomain: "food-rest-d52ab.firebaseapp.com",
     databaseURL: "https://food-rest-d52ab-default-rtdb.firebaseio.com",
@@ -21,7 +21,8 @@ const firebaseConfig = {
     const buttonOut = document.querySelector('.button-out');
     const closeAuth = document.querySelector('.close-auth');
 
-    const closeBin = document.querySelector('.close');
+    const closeBasket = document.querySelector('.close');
+    const clearBasket = document.querySelector('.clear-cart');
 
     const userName = document.querySelector('.user-name');
     const modalBody = document.querySelector('.modal-body');
@@ -38,7 +39,7 @@ const firebaseConfig = {
   let login = localStorage.getItem('deliveryFood');
 
 
-  const cart = [];  // корзина
+  const cart = [];  // food basket
 
   const loadCart = () => {
     if(localStorage.getItem(login)) {
@@ -65,6 +66,12 @@ const firebaseConfig = {
     containerPromo.classList.remove('hide');
     restaurants.classList.remove('hide');
     menu.classList.add('hide');
+  }
+
+
+
+  function cleanBasket () {
+    modalBody.textContent = '';
   }
 
 
@@ -293,11 +300,9 @@ const firebaseConfig = {
     })
 
     modalBody.addEventListener('click', changeCount);
-
     cardsRestaurants.addEventListener('click', openGoods);
-
-    closeBin.addEventListener('click', toggleModal);
-
+    closeBasket.addEventListener('click', toggleModal);
+    clearBasket.addEventListener('click', cleanBasket);
     cardsMenu.addEventListener('click', addToCart);
     
   };
