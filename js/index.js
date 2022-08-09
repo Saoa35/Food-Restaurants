@@ -1,12 +1,12 @@
-  const firebaseConfig = {
-    apiKey: "AIzaSyC9HqG6NteqYoqrcz46rOxBWdhwSc1UJD4",
-    authDomain: "food-rest-d52ab.firebaseapp.com",
-    databaseURL: "https://food-rest-d52ab-default-rtdb.firebaseio.com",
-    projectId: "food-rest-d52ab",
-    storageBucket: "food-rest-d52ab.appspot.com",
-    messagingSenderId: "146693459983",
-    appId: "1:146693459983:web:89da6077bbf1e20204537a"
-  };
+const firebaseConfig = {
+  apiKey: "AIzaSyDhb6Dd9VQBt-hAmIkspxr-4lTT9wd2rQU",
+  authDomain: "food-restaraunts.firebaseapp.com",
+  databaseURL: "https://food-restaraunts-default-rtdb.firebaseio.com",
+  projectId: "food-restaraunts",
+  storageBucket: "food-restaraunts.appspot.com",
+  messagingSenderId: "202887220784",
+  appId: "1:202887220784:web:08750ccc3b33d28473e7f5"
+};
 
   firebase.initializeApp(firebaseConfig);
 
