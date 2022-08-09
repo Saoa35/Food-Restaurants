@@ -1,0 +1,322 @@
+{
+  "foodBand" : {
+    "partnerName": "Food Band",
+    "category": "Пицца",
+    "data": [{
+      "description" : "Пицца, соус, сыр Моцарелла, томат, куриное филе, пепперони, свинина, бекон",
+      "id" : "fb01",
+      "image" : "img/food-band/meet.jpg",
+      "name" : "Мясная",
+      "price" : 685
+    }, {
+      "description" : "Пицца соус, сыр Моцарелла, томат",
+      "id" : "fb02",
+      "image" : "img/food-band/margarita.jpg",
+      "name" : "Маргарита",
+      "price" : 693
+    }, {
+      "description" : "Пицца соус, пепперони, сыр Моцарелла",
+      "id" : "fb03",
+      "image" : "img/food-band/pepperoni.jpg",
+      "name" : "Пепперони",
+      "price" : 595
+    }, {
+      "description" : "Сыр моцарелла, сыр эмменталь, соус сырный, сыр горгондзола, сыр чеддер, сыр креметте, сыр фетакса, сыр пармезан",
+      "id" : "fb04",
+      "image" : "img/food-band/seven-cheeses.jpg",
+      "name" : "Семь сыров",
+      "price" : 785
+    }, {
+      "description" : "Креветки, куриное филе, соус Том Ям, сыр Моцарелла, шампиньоны, капуста брокколи, томат.",
+      "id" : "fb05",
+      "image" : "img/food-band/tom-yam.jpg",
+      "name" : "Том Ям",
+      "price" : 695
+    }, {
+      "description" : "Сливочный соус, соус манго-чили, сыр моцарелла, лук красный, перец болгарский, ломтики лосося, салат Айсберг",
+      "id" : "fb06",
+      "image" : "img/food-band/norwegian.jpg",
+      "name" : "Норвежская",
+      "price" : 875
+    }]
+  },
+  "gusiLebedi" : {
+    "partnerName": "Гуси Лебеди",
+    "category": "Русская кухня",
+    "data": [ {
+      "description" : "Настоящие самолепные пельмени из пушистого теста на деревенских желтках и сметане",
+      "id" : "gl01",
+      "image" : "img/gusi-lebedi/dumplings.jpg",
+      "name" : "Пельмени теленок с поросем",
+      "price" : 390
+    }, {
+      "description" : "Плов на углях из правильного риса с бараниной, пряностями и овощами на курдючном жире",
+      "id" : "gl02",
+      "image" : "img/gusi-lebedi/plov.jpg",
+      "name" : "Плов",
+      "price" : 520
+    }, {
+      "description" : "Подается на лаваше со свежим томатом и огурцом, с маринованным луком и с шашлычным соусом",
+      "id" : "gl03",
+      "image" : "img/gusi-lebedi/chick.jpg",
+      "name" : "Цыпленок на вертеле",
+      "price" : 490
+    }, {
+      "description" : "Кура тушка, морковь, макароны, зелень, яйцо, соль, специи.",
+      "id" : "gl04",
+      "image" : "img/gusi-lebedi/chicken-soup.jpg",
+      "name" : "Суп Курочка ряба",
+      "price" : 140
+    }, {
+      "description" : "Толстый кусок парной свинины с томатами и грибами под сырной корочкой",
+      "id" : "gl05",
+      "image" : "img/gusi-lebedi/pig-chop.jpg",
+      "name" : "Отбивная из поросенка",
+      "price" : 490
+    }, {
+      "description" : "Теленок с шампиньонами и луком обжаривается в сливочно-сметанном соусе с картофельным пюре и солеными огурчиками.",
+      "id" : "gl06",
+      "image" : "img/gusi-lebedi/calf-sauce.jpg",
+      "name" : "Теленок в сливочном соусе",
+      "price" : 530
+    }, {
+      "description" : "Филе судака с картошкой, деревенской сметаной, травами и луком",
+      "id" : "gl07",
+      "image" : "img/gusi-lebedi/zander.jpg",
+      "name" : "Судак запеченный",
+      "price" : 490
+    }, {
+      "description" : "Мурманские кальмары с чесночным маслом",
+      "id" : "gl08",
+      "image" : "img/gusi-lebedi/squid.jpg",
+      "name" : "Мурманские кальмары",
+      "price" : 420
+    }, {
+      "description" : "Наваристая походная уха на четырех рыбах, лаврухе, перце и луке с водкой.",
+      "id" : "gl09",
+      "image" : "img/gusi-lebedi/ear.jpg",
+      "name" : "Щучья уха на карасях",
+      "price" : 380
+    } ]
+  },
+  "palkiSkalki" : {
+    "partnerName": "Палки скалки",
+    "category": "Кухня разных народов мира",
+    "data": [ {
+      "description" : "Пепперони, Чикен Барбекю, Капричеза",
+      "id" : "ps01",
+      "image" : "img/palki-skalki/combo.jpg",
+      "name" : "Комбо 3 пиццы",
+      "price" : 899
+    }, {
+      "description" : "30 см. Корнишоны, томатный соус, колбаса, красный лучок, сыр моцарелла, помидоры Черри, зелень.",
+      "id" : "ps02",
+      "image" : "img/palki-skalki/rome.jpg",
+      "name" : "Пицца Римская",
+      "price" : 408
+    }, {
+      "description" : "Сыр моцарелла, соус томатный, курица, пепперони, перец болгарский, томаты, лук красный, соус бургер, лук зеленый",
+      "id" : "ps03",
+      "image" : "img/palki-skalki/fusion.jpg",
+      "name" : "Пицца Фьюжн",
+      "price" : 499
+    }, {
+      "description" : "Японский супчик на мисо бульоне с добавлением яйца, тигровой креветки, лапши, шампиньонов и зеленого лучка.",
+      "id" : "ps04",
+      "image" : "img/palki-skalki/udon.jpg",
+      "name" : "Эби удон",
+      "price" : 319
+    }, {
+      "description" : "Мясная котлета, салат Айсберг, Шеф-соус, помидоры, корнишоны, сыр Чеддер, соус Барбекю",
+      "id" : "ps05",
+      "image" : "img/palki-skalki/cheeseburger.jpg",
+      "name" : "Чизбургер",
+      "price" : 358
+    }, {
+      "description" : "Сыр, помидор, цыпленок, перец сладкий, лук, салат, яичный блинчик, соус сырный, тортилья, кетчуп",
+      "id" : "ps06",
+      "image" : "img/palki-skalki/burrito.jpg",
+      "name" : "Буррито с курицей",
+      "price" : 356
+    } ]
+  },
+  "pizzaBurger" : {
+    "partnerName": "PizzaBurger",
+    "category": "Пицца",
+    "data": [ {
+      "description" : "Сыр моцарелла, помидоры, салями, бекон, сыр пармезан, зелень, ветчина",
+      "id" : "pb01",
+      "image" : "img/pizza-burger/pizza-dacha.jpg",
+      "name" : "Пицца от Шеф-повара",
+      "price" : 638
+    }, {
+      "description" : "Сыр моцарелла, фирменный соус, помидоры, куриная грудка, бекон, свинина, говядина, зелень",
+      "id" : "pb02",
+      "image" : "img/pizza-burger/pizza-meat.jpg",
+      "name" : "Пицца Мясное ассорти",
+      "price" : 693
+    }, {
+      "description" : "Сыр моцарелла, пицца соус, чеснок, сыр пармезан, шампиньоны, помидоры, зелень, лук, курица, бекон, ветчина, пепперони",
+      "id" : "pb03",
+      "image" : "img/pizza-burger/pizza-village.jpg",
+      "name" : "Пицца Деревенская",
+      "price" : 705
+    }, {
+      "description" : "Соус Цезарь, куриная грудка, сыр пармезан, моцарелла, гренки, помидоры, салат айсберг",
+      "id" : "pb04",
+      "image" : "img/pizza-burger/pizza-caesar.jpg",
+      "name" : "Пицца Цезарь",
+      "price" : 759
+    }, {
+      "description" : "Сыр моцарелла, пицца соус, шампиньоны, пепперони",
+      "id" : "pb05",
+      "image" : "img/pizza-burger/pizza-pepperoni.jpg",
+      "name" : "Пицца Пепперони",
+      "price" : 475
+    }, {
+      "description" : "Сыр моцарелла, пицца соус, бекон, картофель фри, куриная грудка, помидоры, пепперони, ветчина, зелень",
+      "id" : "pb06",
+      "image" : "img/pizza-burger/pizza-dacha.jpg",
+      "name" : "Пицца Дачная",
+      "price" : 649
+    } ]
+  },
+  "pizzaPlus" : {
+    "partnerName": "Пицца Плюс",
+    "category": "Пицца",
+    "data": [ {
+      "description" : "Соус томатный, сыр «Моцарелла», ветчина, пепперони, перец «Халапенье», соус «Тобаско», томаты.",
+      "id" : "pp01",
+      "image" : "img/pizza-plus/pizza-vesuvius.jpg",
+      "name" : "Пицца Везувий",
+      "price" : 545
+    }, {
+      "description" : "Соус томатный, постное тесто, нежирный сыр, кукуруза, лук, маслины, грибы, помидоры, болгарский перец.",
+      "id" : "pp02",
+      "image" : "img/pizza-plus/pizza-girls.jpg",
+      "name" : "Пицца Девичник",
+      "price" : 450
+    }, {
+      "description" : "Соус томатный, сыр «Моцарелла», черри, маслины, зелень, майонез",
+      "id" : "pp03",
+      "image" : "img/pizza-plus/pizza-oleole.jpg",
+      "name" : "Пицца Оле-Оле",
+      "price" : 440
+    }, {
+      "description" : "Соус томатный, сыр «Моцарелла», сыр «Чеддер», томаты, пепперони, телятина, грибы, бекон, болгарский перец.",
+      "id" : "pp04",
+      "image" : "img/pizza-plus/pizza-plus.jpg",
+      "name" : "Пицца Плюс",
+      "price" : 805
+    }, {
+      "description" : "Соус томатный, сыр «Моцарелла», ветчина, ананасы",
+      "id" : "pp05",
+      "image" : "img/pizza-plus/pizza-hawaiian.jpg",
+      "name" : "Пицца Гавайская",
+      "price" : 440
+    }, {
+      "description" : "Соус томатный, сыр «Моцарелла», сыр «Пармезан», ветчина, салями, грибы.",
+      "id" : "pp06",
+      "image" : "img/pizza-plus/pizza-classic.jpg",
+      "name" : "Пицца Классика",
+      "price" : 510
+    } ]
+  },
+  "tanuki" : {
+    "partnerName": "Тануки",
+    "category": "Японская кухня",
+    "data": [ {
+      "description" : "Угорь, авокадо, сыр, тобико, соус «Нисуаз», кунжут, 6 шт.",
+      "id" : "tn01",
+      "image" : "img/tanuki/nisuaz.jpg",
+      "name" : "ФИЛАДЕЛЬФИЯ НИСУАЗ",
+      "price" : 455
+    }, {
+      "description" : "Лосось копченый, курица копченая, омлет, огурец, авокадо, сыр, микс соусов, 6 шт.",
+      "id" : "tn02",
+      "image" : "img/tanuki/smoke.jpg",
+      "name" : "ФИЛАДЕЛЬФИЯ СМОУК",
+      "price" : 455
+    }, {
+      "description" : "Лосось, авокадо, огурец, сыр, омлет, тобико, микс соусов",
+      "id" : "tn03",
+      "image" : "img/tanuki/fresh.jpg",
+      "name" : "ФИЛАДЕЛЬФИЯ ФРЕШ",
+      "price" : 455
+    }, {
+      "description" : "Лосось, авокадо, краб-микс, сыр, соус «Ажи-маракуйя», тобико, кунжут, 6 шт.",
+      "id" : "tn04",
+      "image" : "img/tanuki/azhi.jpg",
+      "name" : "КАЛИФОРНИЯ АЖИ",
+      "price" : 455
+    }, {
+      "description" : "Креветка, краб-микс, сыр, тобико, микс соусов, кунжут, 6 шт.",
+      "id" : "tn05",
+      "image" : "img/tanuki/black.jpg",
+      "name" : "КАЛИФОРНИЯ БЛЭК",
+      "price" : 455
+    }, {
+      "description" : "Креветка, снежный краб, гуакамоле, сыр, огурец, микс соусов, тобико, кунжут, 6 шт.",
+      "id" : "tn06",
+      "image" : "img/tanuki/tanuki.jpg",
+      "name" : "ТАНУКИ",
+      "price" : 649
+    } ]
+  },
+  "partners": [
+  {
+    "name": "Пицца Плюс",
+    "time_of_delivery": 50,
+    "stars": 4.5,
+    "price": 900,
+    "kitchen": "Пицца",
+    "image": "img/pizza-plus/preview.jpg",
+    "products": "pizzaPlus"
+  },
+  {
+    "name": "Тануки",
+    "time_of_delivery": 60,
+    "stars": 4.3,
+    "price": 1200,
+    "kitchen": "Суши, роллы",
+    "image": "img/tanuki/preview.jpg",
+    "products": "tanuki"
+  },
+  {
+    "name": "FoodBand",
+    "time_of_delivery": 40,
+    "stars": 4.4,
+    "price": 450,
+    "kitchen": "Пицца",
+    "image": "img/food-band/preview.jpg",
+    "products": "foodBand"
+  },
+  {
+    "name": "Палки скалки",
+    "time_of_delivery": 55,
+    "stars": 4.1,
+    "price": 500,
+    "kitchen": "Пицца",
+    "image": "img/palki-skalki/preview.jpg",
+    "products": "palkiSkalki"
+  },
+  {
+    "name": "Гуси Лебеди",
+    "time_of_delivery": 75,
+    "stars": 4.7,
+    "price": 1000,
+    "kitchen": "Русская кухня",
+    "image": "img/gusi-lebedi/preview.jpg",
+    "products": "gusiLebedi"
+  },
+  {
+    "name": "PizzaBurger",
+    "time_of_delivery": 45,
+    "stars": 4.6,
+    "price": 700,
+    "kitchen": "Пицца",
+    "image": "img/pizza-burger/preview.jpg",
+    "products": "pizzaBurger"
+  }
+]
+}
