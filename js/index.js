@@ -1,11 +1,11 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyBYe72i1vn3HIII6t16i8b-RclrTO5xvP8",
-  authDomain: "food-deliv-rest.firebaseapp.com",
-  databaseURL: "https://food-deliv-rest-default-rtdb.firebaseio.com",
-  projectId: "food-deliv-rest",
-  storageBucket: "food-deliv-rest.appspot.com",
-  messagingSenderId: "163660423585",
-  appId: "1:163660423585:web:486f2044c7767d07102be0"
+  apiKey: "AIzaSyCfBYQHG3C7679PmQXlKEJstzB4xpcjHNs",
+  authDomain: "delivery-food-cad83.firebaseapp.com",
+  databaseURL: "https://delivery-food-cad83-default-rtdb.firebaseio.com",
+  projectId: "delivery-food-cad83",
+  storageBucket: "delivery-food-cad83.appspot.com",
+  messagingSenderId: "597132858859",
+  appId: "1:597132858859:web:6b1d9f246874b5eeb8b5ae"
 };
 
   firebase.initializeApp(firebaseConfig);
@@ -157,7 +157,7 @@ const firebaseConfig = {
             <div class="rating">
               ${stars}
             </div>
-            <div class="price">Oт $${price} </div>
+            <div class="price">From $${price} </div>
             <div class="category"> ${kitchen} </div>
           </div>
         </div>
@@ -183,7 +183,7 @@ const firebaseConfig = {
         </div>
         <div class="card-buttons">
           <button class="button button-primary button-add-cart" id="${id}">
-            <span class="button-card-text">В корзину</span>
+            <span class="button-card-text">Add to basket</span>
             <span class="button-cart-svg"></span>
           </button>
           <strong class="card-price-bold card-price"> $${price} </strong>
