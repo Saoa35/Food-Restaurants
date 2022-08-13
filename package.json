@@ -1,0 +1,19 @@
+{
+  "name": "delivery-food-scss",
+  "version": "1.0.0",
+  "description": "This project creates a food ordering and delivery website with different types of restaurants and dishes. It was created using HTML5, CSS3 and JavaScript. \r It also includes the JQuery and Slick libraries, the database was downloaded and received in JSON format from the Firebase platform.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saoa35/Food-Restaurants.git"
+  },
+  "author": "Olexandr Makharadze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saoa35/Food-Restaurants/issues"
+  },
+  "homepage": "https://github.com/Saoa35/Food-Restaurants#readme"
+}
