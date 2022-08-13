@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Saoa35/Food-Restaurants#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0"
   }
 }
