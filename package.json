@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Saoa35/Food-Restaurants/issues"
   },
-  "homepage": "https://github.com/Saoa35/Food-Restaurants#readme"
+  "homepage": "https://github.com/Saoa35/Food-Restaurants#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
