@@ -1,5 +1,14 @@
 const { src, dest, watch } = require('gulp');
 const scss = require('gulp-sass')(require('sass'));
+const browserSync = require('browser-sync').create();
+
+function browsersync() {
+    browserSync.init({
+         server : {
+            baseDir: 'app/'
+         }
+    });
+}
 
 function styles() {
     return src('app/scss/style.scss')
