@@ -24,7 +24,7 @@ const firebaseConfig = {
     const closeBasket = document.querySelector('.close');
     const clearBasket = document.querySelector('.clear-cart');
 
-    const userName = document.querySelector('.user-name');
+    const userName = document.querySelector('.store-header__user-name');
     const modalBody = document.querySelector('.modal-body');
 
     const cardsRestaurants = document.querySelector('.cards-restaurants');

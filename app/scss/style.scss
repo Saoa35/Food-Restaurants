@@ -40,6 +40,18 @@
         width: 100%;
         background-image: url(../../img/icon/home.svg);
       }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+      }
+
+    &__user-name {
+        display: none;
+        margin-right: 20px;
+        font-weight: bold;
+        font-size: 18px;
+      }
   }
   
   .input {
@@ -65,11 +77,6 @@
     width: 300px;
     background-image: url(../../img/icon/search.svg);
   
-  }
-  
-  .buttons {
-    display: flex;
-    align-items: center;
   }
   
   .button {
@@ -160,13 +167,6 @@
   .button-out {
     display: none;
     margin: 0 5px;
-  }
-  
-  .user-name {
-    display: none;
-    margin-right: 20px;
-    font-weight: bold;
-    font-size: 18px;
   }
   
   .promo-slider {
