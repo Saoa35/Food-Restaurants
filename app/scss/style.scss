@@ -24,11 +24,16 @@
     margin: auto;
   }
   
-  .store-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
+  .store-header {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    &__address {
+        flex: 0.8;
+      }
   }
   
   .input {
@@ -42,9 +47,7 @@
     background-position: left 11px center;
   }
   
-  .address {
-    flex: 0.8;
-  }
+  
   
   .input-address {
     width: 100%;

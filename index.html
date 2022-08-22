@@ -16,26 +16,28 @@
 	
 		<header class="store-header">
 			<div class="container">
-				<a class="logo">
-					<img src="img/icon/logo.svg" alt="Logo"/>
-				</a>
-				<label class="address">
-					<input type="text" class="input input-address" placeholder="Delivery address"/>
-				</label>
-				<div class="buttons">
-					<span class="user-name"></span>
-					<button class="button button-primary button-auth">
-						<span class="button-auth-svg"></span>
-						<span class="button-text">Login</span>
-					</button>
-					<button class="button button-cart" id="cart-button">
-						<span class="button-cart-svg"></span>
-						<span class="button-text">Basket</span>
-					</button>
-					<button class="button button-primary button-out">
-						<span class="button-text">Logout</span>
-						<span class="button-out-svg"></span>
-					</button>
+				<div class="store-header__wrapper">
+					<a class="logo">
+						<img src="img/icon/logo.svg" alt="Logo"/>
+					</a>
+					<label class="store-header__address">
+						<input type="text" class="input input-address" placeholder="Delivery address"/>
+					</label>
+					<div class="buttons">
+						<span class="user-name"></span>
+						<button class="button button-primary button-auth">
+							<span class="button-auth-svg"></span>
+							<span class="button-text">Login</span>
+						</button>
+						<button class="button button-cart" id="cart-button">
+							<span class="button-cart-svg"></span>
+							<span class="button-text">Basket</span>
+						</button>
+						<button class="button button-primary button-out">
+							<span class="button-text">Logout</span>
+							<span class="button-out-svg"></span>
+						</button>
+					</div>
 				</div>
 			</div>	
 		</header>
@@ -120,7 +122,9 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer-block">
-				<img src="img/icon/logo.svg" alt="logo" class="logo footer-logo"/>
+				<a href="#" class="logo footer-logo">
+					<img src="img/icon/logo.svg" alt="logo"/>
+				</a>
 				<nav class="footer-nav">
 					<a href="#" class="footer-link">For Restaurants </a>
 					<a href="#" class="footer-link">For couriers</a>
