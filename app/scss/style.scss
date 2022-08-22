@@ -31,8 +31,14 @@
         justify-content: space-between;
         margin-bottom: 40px;
     }
+
     &__address {
         flex: 0.8;
+      }
+
+    &__input-address {
+        width: 100%;
+        background-image: url(../../img/icon/home.svg);
       }
   }
   
@@ -49,10 +55,7 @@
   
   
   
-  .input-address {
-    width: 100%;
-    background-image: url(../../img/icon/home.svg);
-  }
+  
   
   .search {
     margin-left: auto;
@@ -721,19 +724,19 @@
         width: 90%;
     }
   
-    .address {
-        min-width: 100%;
-        order: 1;
-    }
-  
     .store-header {
         flex-wrap: wrap;
-    }
-  
-    .input-address {
-        margin-top: 15px;
-        order: 5;
-        flex: 1;
+
+        &__address {
+            min-width: 100%;
+            order: 1;
+        }
+
+        &__input-address {
+            margin-top: 15px;
+            order: 5;
+            flex: 1;
+        }
     }
   
     .promo {

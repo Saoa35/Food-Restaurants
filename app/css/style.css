@@ -32,6 +32,10 @@ button {
 .store-header__address {
   flex: 0.8;
 }
+.store-header__input-address {
+  width: 100%;
+  background-image: url(../../img/icon/home.svg);
+}
 
 .input {
   background-color: #ffffff;
@@ -42,11 +46,6 @@ button {
   padding: 8px 8px 8px 35px;
   background-repeat: no-repeat;
   background-position: left 11px center;
-}
-
-.input-address {
-  width: 100%;
-  background-image: url(../../img/icon/home.svg);
 }
 
 .search {
@@ -672,14 +671,14 @@ button {
   .container {
     width: 90%;
   }
-  .address {
-    min-width: 100%;
-    order: 1;
-  }
   .store-header {
     flex-wrap: wrap;
   }
-  .input-address {
+  .store-header__address {
+    min-width: 100%;
+    order: 1;
+  }
+  .store-header__input-address {
     margin-top: 15px;
     order: 5;
     flex: 1;
