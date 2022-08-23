@@ -107,7 +107,11 @@
             border: 1px solid #d9d9d9;
             color: #595959;
 
-            &.button-cart-svg {
+            .button-auth-svg{
+                background-color: #595959;
+            }
+
+            .button-cart-svg {
                 background-color: #595959;
               }
         }
@@ -146,10 +150,6 @@
         mask: url("../../img/icon/shopping-cart.svg") no-repeat 50% 50%;
         background-repeat: no-repeat;
       }
-  }
-  
-  .button-primary:hover .button-cart-svg {
-    background-color: #595959;
   }
   
   .button-cart {
