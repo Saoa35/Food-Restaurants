@@ -23,11 +23,13 @@ button {
   margin: auto;
 }
 
+.store-header {
+  margin-bottom: 40px;
+}
 .store-header__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
 }
 .store-header__address {
   flex: 0.8;
