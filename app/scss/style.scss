@@ -129,9 +129,7 @@
         background-position: 20px 13px;
     }
 
-    &-primary &-card-svg {
-        background-color: #fff;
-    }
+    
 
     &-primary &-auth-svg {
         width: 24px;
@@ -142,7 +140,7 @@
         background-repeat: no-repeat;
       }
 
-    &-primary &-cart-svg {
+    & &-cart-svg {
         width: 24px;
         height: 24px;
         background-color: #595959;
@@ -150,16 +148,15 @@
         mask: url("../../img/icon/shopping-cart.svg") no-repeat 50% 50%;
         background-repeat: no-repeat;
       }
-  }
-  
-  .button-cart {
-    display: none;
-    margin: 0 5px;
-  }
-  
-  .button-out {
-    display: none;
-    margin: 0 5px;
+
+    &-primary &-card-svg {
+        background-color: #fff;
+    }
+    
+    &-cart, &-out {
+        display: none;
+        margin: 0 5px;
+      }
   }
   
   .promo-slider {
