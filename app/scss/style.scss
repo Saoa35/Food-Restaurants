@@ -87,6 +87,15 @@
     font-size: 16px;
     line-height: 24px;
 
+    &:hover {
+        background: #1890ff;
+        border: 1px solid #1890ff;
+        color: #fff;
+        & .button-cart-svg {
+            background-color: #fff;
+          } 
+    }
+
     &-primary {
         background: #1890ff;
         border: 1px solid #1890ff;
@@ -98,7 +107,7 @@
             border: 1px solid #d9d9d9;
             color: #595959;
 
-            .button-auth-svg {
+            &.button-cart-svg {
                 background-color: #595959;
               }
         }
@@ -116,6 +125,10 @@
         background-position: 20px 13px;
     }
 
+    &-primary &-card-svg {
+        background-color: #fff;
+    }
+
     &-primary &-auth-svg {
         width: 24px;
         height: 24px;
@@ -125,28 +138,14 @@
         background-repeat: no-repeat;
       }
 
-    &:hover {
-        background: #1890ff;
-        border: 1px solid #1890ff;
-        color: #fff;
-    }
-  }
-  
-  .button .button-cart-svg {
-    width: 24px;
-    height: 24px;
-    background-color: #595959;
-    -webkit-mask: url("../../img/icon/shopping-cart.svg") no-repeat 50% 50%;
-    mask: url("../../img/icon/shopping-cart.svg") no-repeat 50% 50%;
-    background-repeat: no-repeat;
-  }
-  
-  .button-primary .button-cart-svg {
-    background-color: #fff;
-  }
-  
-  .button:hover .button-cart-svg {
-    background-color: #fff;
+    &-primary &-cart-svg {
+        width: 24px;
+        height: 24px;
+        background-color: #595959;
+        -webkit-mask: url("../../img/icon/shopping-cart.svg") no-repeat 50% 50%;
+        mask: url("../../img/icon/shopping-cart.svg") no-repeat 50% 50%;
+        background-repeat: no-repeat;
+      }
   }
   
   .button-primary:hover .button-cart-svg {
