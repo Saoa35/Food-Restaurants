@@ -226,10 +226,9 @@
   }
   
   .cards {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    column-gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
   }
   
   .card {

@@ -28,7 +28,7 @@ const firebaseConfig = {
     const modalBody = document.querySelector('.modal-body');
 
     const cardsRestaurants = document.querySelector('.restaurants__cards');
-    const cardsMenu = document.querySelector('.cards-menu');
+    const cardsMenu = document.querySelector('.menu__cards');
     const containerPromo = document.querySelector('.container-promo');
     const restaurants = document.querySelector('.restaurants');
     const menu = document.querySelector('.menu');

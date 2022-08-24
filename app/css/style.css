@@ -121,7 +121,6 @@ button {
   background-color: #fff;
   -webkit-mask: url("../../img/icon/user.svg") no-repeat 50% 50%;
   mask: url("../../img/icon/user.svg") no-repeat 50% 50%;
-  /* background-image: url("../../img/icon/user.svg"); */
   background-repeat: no-repeat;
 }
 .button .button-cart-svg {
@@ -130,7 +129,6 @@ button {
   background-color: #595959;
   -webkit-mask: url("../../img/icon/shopping-cart.svg") no-repeat 50% 50%;
   mask: url("../../img/icon/shopping-cart.svg") no-repeat 50% 50%;
-  /* background-image: url("../../img/icon/shopping-cart.svg"); */
   background-repeat: no-repeat;
 }
 .button-primary .button-card-svg {
@@ -206,10 +204,9 @@ button {
 }
 
 .cards {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  column-gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .card {
