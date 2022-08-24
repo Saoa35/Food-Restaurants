@@ -544,6 +544,7 @@ button {
   justify-content: center;
   width: 100%;
   margin: 20px 0 30px;
+  grid-column-start: 2;
 }
 
 @media (max-width: 1366px) {
