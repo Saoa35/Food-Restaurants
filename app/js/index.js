@@ -27,7 +27,7 @@ const firebaseConfig = {
     const userName = document.querySelector('.store-header__user-name');
     const modalBody = document.querySelector('.modal-body');
 
-    const cardsRestaurants = document.querySelector('.cards-restaurants');
+    const cardsRestaurants = document.querySelector('.restaurants__cards');
     const cardsMenu = document.querySelector('.cards-menu');
     const containerPromo = document.querySelector('.container-promo');
     const restaurants = document.querySelector('.restaurants');
