@@ -228,6 +228,14 @@
         margin-left: auto;
       }
 
+    &__spinner {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 20px 0 30px;
+        grid-column-start: 2;
+      }
+
     .card-text {
         min-height: auto;
     }
@@ -585,13 +593,6 @@
     line-height: 23px;
   }
   
-  .spinner-wrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 20px 0 30px;
-    grid-column-start: 2;
-  }
   
   @media (max-width: 1366px) {
     .container {

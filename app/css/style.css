@@ -1,4 +1,5 @@
 @import '-normalize.css';
+
 * {
   box-sizing: border-box;
 }
@@ -200,6 +201,13 @@ button {
 }
 .restaurants__search {
   margin-left: auto;
+}
+.restaurants__spinner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0 30px;
+  grid-column-start: 2;
 }
 .restaurants .card-text {
   min-height: auto;
@@ -550,14 +558,6 @@ button {
   padding: 15px 20px;
   font-size: 20px;
   line-height: 23px;
-}
-
-.spinner-wrapper {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: 20px 0 30px;
-  grid-column-start: 2;
 }
 
 @media (max-width: 1366px) {
