@@ -65,10 +65,6 @@
     background-position: left 11px center;
   }
   
-  .search {
-    margin-left: auto;
-  }
-  
   .input-search {
     width: 300px;
     background-image: url(../../img/icon/search.svg);
@@ -219,9 +215,22 @@
         margin-bottom: 44px;
     }
 
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        margin: 0 30px 0 0;
+        color: #000000;
+    }
+
+    &__search {
+        margin-left: auto;
+      }
+
     .card-text {
         min-height: auto;
-      }
+    }
   }
 
   .menu {
