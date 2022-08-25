@@ -231,15 +231,15 @@
         align-items: center;
         margin-bottom: 44px;
       }
-  }
-  
-  .section-title {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-    margin: 0 30px 0 0;
-    color: #000000;
+
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        margin: 0 30px 0 0;
+        color: #000000;
+      }
   }
   
   .cards {
@@ -749,6 +749,12 @@
     }
   
     .menu {
+        &__title {
+            font-size: 20px;
+        }
+    }
+
+    .restaurants {
         &__title {
             font-size: 20px;
         }

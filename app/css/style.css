@@ -204,8 +204,7 @@ button {
   align-items: center;
   margin-bottom: 44px;
 }
-
-.section-title {
+.menu__title {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -678,6 +677,9 @@ button {
     margin-bottom: 10px;
   }
   .menu__title {
+    font-size: 20px;
+  }
+  .restaurants__title {
     font-size: 20px;
   }
   .card {
