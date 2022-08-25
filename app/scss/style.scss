@@ -1,5 +1,16 @@
 @import '-normalize.css';
 
+$white-smoke:#d9d9d9;
+$pure-white: #ffffff;
+$lite-blue: #1890ff;
+
+%block-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 44px;
+}
+
 * {
     box-sizing: border-box;
   }
@@ -55,28 +66,28 @@
   }
   
   .input {
-    background-color: #ffffff;
-    border: 1px solid #d9d9d9;
+    background-color: $pure-white;
+    border: 1px solid $white-smoke;
     border-radius: 2px;
     font-size: 16px;
     line-height: 24px;
     padding: 8px 8px 8px 35px;
     background-repeat: no-repeat;
     background-position: left 11px center;
+
+    &-search {
+        width: 300px;
+        background-image: url(../../img/icon/search.svg);
+      }
   }
   
-  .input-search {
-    width: 300px;
-    background-image: url(../../img/icon/search.svg);
-  
-  }
   
   .button {
     display: flex;
     align-items: center;
     padding: 8px 16px;
-    background: #ffffff;
-    border: 1px solid #d9d9d9;
+    background: $pure-white;
+    border: 1px solid $white-smoke;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.0015);
     border-radius: 2px;
     color: #595959;
@@ -84,8 +95,8 @@
     line-height: 24px;
 
     &:hover {
-        background: #1890ff;
-        border: 1px solid #1890ff;
+        background: $lite-blue;
+        border: 1px solid $lite-blue;
         color: #fff;
         & .button-cart-svg {
             background-color: #fff;
@@ -93,14 +104,14 @@
     }
 
     &-primary {
-        background: #1890ff;
-        border: 1px solid #1890ff;
+        background: $lite-blue;
+        border: 1px solid $lite-blue;
         color: #fff;
         margin-right: 10px;
 
         &:hover {
-            background: #ffffff;
-            border: 1px solid #d9d9d9;
+            background: $pure-white;
+            border: 1px solid $white-smoke;
             color: #595959;
 
             .button-auth-svg{
@@ -155,18 +166,24 @@
       }
   }
   
-  .promo-slider {
-  
-    width: 600px;
-    height: 300px;
-  
-  }
-  
   .promo {
     box-shadow: 0 7px 12px rgba(158, 158, 163, 0.1);
     border-radius: 10px;
     padding: 68px 70px;
     margin-bottom: 56px;
+
+    &-slider {
+        width: 600px;
+        height: 300px;
+      }
+
+    &-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 39px;
+        line-height: 46px;
+        color: #302c34;
+      }
   }
   
   .pizza {
@@ -185,14 +202,6 @@
     background: #FFF1F0 url(../../img/promo/sushi.png) no-repeat top 10px right 15px / 500px
   }
   
-  .promo-title {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 39px;
-    line-height: 46px;
-    color: #302c34;
-  }
-  
   .promo-text {
     font-style: normal;
     font-weight: normal;
@@ -209,10 +218,7 @@
   .restaurants {
 
     &__heading {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-bottom: 44px;
+       @extend %block-heading;
     }
 
     &__title {
@@ -243,10 +249,7 @@
 
   .menu {
     &__heading {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-bottom: 44px;
+        @extend %block-heading;
       }
 
     &__title {
@@ -266,7 +269,7 @@
   }
   
   .card {
-    background: #ffffff;
+    background: $pure-white;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     border-radius: 7px;
     overflow: hidden;
@@ -318,7 +321,7 @@
     font-weight: normal;
     font-size: 12px;
     line-height: 20px;
-    color: #ffffff;
+    color: $pure-white;
     background: #262626;
     border-radius: 2px;
     padding: 1px 8px;
@@ -458,7 +461,7 @@
   .modal-dialog {
     max-width: 780px;
     width: 95%;
-    background: #ffffff;
+    background: $pure-white;
     border-radius: 5px;
     margin: auto;
     padding: 40px 45px;
@@ -517,7 +520,7 @@
     align-items: flex-start;
     justify-content: space-between;
     padding-bottom: 8px;
-    border-bottom: 1px solid #d9d9d9;
+    border-bottom: 1px solid $white-smoke;
     margin-bottom: 15px;
   }
   
@@ -546,7 +549,7 @@
     justify-content: center;
     width: 39px;
     height: 32px;
-    background: #ffffff;
+    background: $pure-white;
     border: 1px solid #40a9ff;
     box-sizing: border-box;
     border-radius: 2px;
@@ -558,8 +561,8 @@
   
   .counter-button:hover {
     background: #40a9ff;
-    border: 1px solid #ffffff;
-    color: #ffffff;
+    border: 1px solid $pure-white;
+    color: $pure-white;
   }
   
   .counter {
@@ -587,7 +590,7 @@
   .modal-pricetag {
     background: #262626;
     border-radius: 5px;
-    color: #ffffff;
+    color: $pure-white;
     padding: 15px 20px;
     font-size: 20px;
     line-height: 23px;

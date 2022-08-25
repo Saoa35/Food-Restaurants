@@ -1,4 +1,10 @@
 @import '-normalize.css';
+.menu__heading, .restaurants__heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 44px;
+}
 
 * {
   box-sizing: border-box;
@@ -60,7 +66,6 @@ button {
   background-repeat: no-repeat;
   background-position: left 11px center;
 }
-
 .input-search {
   width: 300px;
   background-image: url(../../img/icon/search.svg);
@@ -136,16 +141,22 @@ button {
   margin: 0 5px;
 }
 
-.promo-slider {
-  width: 600px;
-  height: 300px;
-}
-
 .promo {
   box-shadow: 0 7px 12px rgba(158, 158, 163, 0.1);
   border-radius: 10px;
   padding: 68px 70px;
   margin-bottom: 56px;
+}
+.promo-slider {
+  width: 600px;
+  height: 300px;
+}
+.promo-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 39px;
+  line-height: 46px;
+  color: #302c34;
 }
 
 .pizza {
@@ -164,14 +175,6 @@ button {
   background: #FFF1F0 url(../../img/promo/sushi.png) no-repeat top 10px right 15px/500px;
 }
 
-.promo-title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 39px;
-  line-height: 46px;
-  color: #302c34;
-}
-
 .promo-text {
   font-style: normal;
   font-weight: normal;
@@ -185,12 +188,6 @@ button {
   background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #f5f5f5 100%);
 }
 
-.restaurants__heading {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-bottom: 44px;
-}
 .restaurants__title {
   font-style: normal;
   font-weight: bold;
@@ -213,12 +210,6 @@ button {
   min-height: auto;
 }
 
-.menu__heading {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-bottom: 44px;
-}
 .menu__title {
   font-style: normal;
   font-weight: bold;
