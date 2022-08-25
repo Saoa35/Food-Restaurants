@@ -188,11 +188,17 @@ button {
   background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #f5f5f5 100%);
 }
 
+.restaurants__heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 44px;
+}
 .restaurants .card-text {
   min-height: auto;
 }
 
-.section-heading {
+.menu__heading {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -671,7 +677,7 @@ button {
   .promo-title {
     margin-bottom: 10px;
   }
-  .section-title {
+  .menu__title {
     font-size: 20px;
   }
   .card {
