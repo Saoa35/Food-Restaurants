@@ -1,4 +1,3 @@
-@import '-normalize.css';
 .menu__heading, .restaurants__heading {
   display: flex;
   flex-wrap: wrap;
@@ -128,9 +127,7 @@ button {
 .button .button-cart-svg {
   width: 24px;
   height: 24px;
-  background-color: #595959;
-  -webkit-mask: url("../../img/icon/shopping-cart.svg") no-repeat 50% 50%;
-  mask: url("../../img/icon/shopping-cart.svg") no-repeat 50% 50%;
+  background-image: url("../../img/icon/basket.png");
   background-repeat: no-repeat;
 }
 .button-primary .button-card-svg {
