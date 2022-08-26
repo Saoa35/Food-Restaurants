@@ -716,6 +716,9 @@ button {
   .button-icon {
     margin: 0;
   }
+  .store-header__wrapper {
+    flex-wrap: wrap;
+  }
   .store-header__buttons {
     flex-wrap: wrap;
     margin-left: auto;
@@ -739,6 +742,14 @@ button {
   }
   .promo {
     padding: 20px;
+  }
+  .restaurants__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu__cards {
+    display: flex;
+    flex-wrap: wrap;
   }
   .footer-block {
     flex-wrap: wrap;

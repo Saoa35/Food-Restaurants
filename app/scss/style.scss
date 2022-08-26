@@ -12,6 +12,11 @@ $lite-gray: #8c8c8c;
     margin-bottom: 44px;
 }
 
+%block-main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 * {
     box-sizing: border-box;
   }
@@ -824,6 +829,11 @@ $lite-gray: #8c8c8c;
     
   
     .store-header {
+        
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+
         &__buttons {
             flex-wrap: wrap;
             margin-left: auto;
@@ -854,6 +864,20 @@ $lite-gray: #8c8c8c;
   
     .promo {
         padding: 20px;
+    }
+
+    .restaurants {
+
+        &__cards {
+           @extend %block-main;
+        }
+    }
+
+    .menu {
+
+        &__cards {
+            @extend %block-main;
+        }
     }
   
     .footer-block {
