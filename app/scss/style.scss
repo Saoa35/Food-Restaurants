@@ -3,6 +3,7 @@ $pure-white: #ffffff;
 $lite-blue: #1890ff;
 $dark-gray: #595959;
 $lite-white: #fff;
+$lite-gray: #8c8c8c;
 
 %block-heading {
     display: flex;
@@ -361,7 +362,7 @@ $lite-white: #fff;
   
   .price,
   .category {
-    color: #8c8c8c;
+    color: $lite-gray;;
     font-size: 18px;
     line-height: 32px;
   }
@@ -371,7 +372,7 @@ $lite-white: #fff;
   }
   
   .ingredients {
-    color: #8c8c8c;
+    color: $lite-gray;;
     font-size: 18px;
     line-height: 21px;
   }
@@ -387,7 +388,7 @@ $lite-white: #fff;
     content: "";
     width: 5px;
     height: 5px;
-    background-color: #8c8c8c;
+    background-color: $lite-gray;;
     display: inline-block;
     vertical-align: middle;
     border-radius: 50%;
