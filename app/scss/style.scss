@@ -1,6 +1,7 @@
 $white-smoke:#d9d9d9;
 $pure-white: #ffffff;
 $lite-blue: #1890ff;
+$dark-gray: #595959;
 
 %block-heading {
     display: flex;
@@ -88,7 +89,7 @@ $lite-blue: #1890ff;
     border: 1px solid $white-smoke;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.0015);
     border-radius: 2px;
-    color: #595959;
+    color: $dark-gray;
     font-size: 16px;
     line-height: 24px;
 
@@ -110,14 +111,14 @@ $lite-blue: #1890ff;
         &:hover {
             background: $pure-white;
             border: 1px solid $white-smoke;
-            color: #595959;
+            color: $dark-gray;
 
             .button-auth-svg{
-                background-color: #595959;
+                background-color: $dark-gray;
             }
 
             .button-cart-svg {
-                background-color: #595959;
+                background-color: $dark-gray;
               }
         }
     }
@@ -148,10 +149,9 @@ $lite-blue: #1890ff;
     & &-cart-svg {
         width: 24px;
         height: 24px;
-        // background-color: #595959;
-        // -webkit-mask: url("../../img/icon/shopping-cart.svg") no-repeat 50% 50%;
-        // mask: url("../../img/icon/shopping-cart.svg") no-repeat 50% 50%;
-        background-image: url("../../img/icon/basket.png");
+        background-color: $dark-gray;
+        -webkit-mask: url("../../img/icon/shopping-cart.svg") no-repeat 50% 50%;
+        mask: url("../../img/icon/shopping-cart.svg") no-repeat 50% 50%;
         background-repeat: no-repeat;
       }
 
@@ -410,7 +410,7 @@ $lite-blue: #1890ff;
   
   .footer-link {
     display: inline-block;
-    color: #595959;
+    color: $dark-gray;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
