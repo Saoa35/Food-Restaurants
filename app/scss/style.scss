@@ -2,6 +2,7 @@ $white-smoke:#d9d9d9;
 $pure-white: #ffffff;
 $lite-blue: #1890ff;
 $dark-gray: #595959;
+$lite-white: #fff;
 
 %block-heading {
     display: flex;
@@ -96,16 +97,16 @@ $dark-gray: #595959;
     &:hover {
         background: $lite-blue;
         border: 1px solid $lite-blue;
-        color: #fff;
+        color: $lite-white;
         & .button-cart-svg {
-            background-color: #fff;
+            background-color: $lite-white;
           } 
     }
 
     &-primary {
         background: $lite-blue;
         border: 1px solid $lite-blue;
-        color: #fff;
+        color: $lite-white;
         margin-right: 10px;
 
         &:hover {
@@ -140,7 +141,7 @@ $dark-gray: #595959;
     &-primary &-auth-svg {
         width: 24px;
         height: 24px;
-        background-color: #fff;
+        background-color: $lite-white;
         -webkit-mask: url("../../img/icon/user.svg") no-repeat 50% 50%;
         mask: url("../../img/icon/user.svg") no-repeat 50% 50%;
         background-repeat: no-repeat;
@@ -156,7 +157,7 @@ $dark-gray: #595959;
       }
 
     &-primary &-card-svg {
-        background-color: #fff;
+        background-color: $lite-white;
     }
     
     &-cart, &-out {
@@ -842,7 +843,7 @@ $dark-gray: #595959;
     .button-out-svg {
         width: 24px;
         height: 24px;
-        background-color: #fff;
+        background-color: $lite-white;
         -webkit-mask: url(../../img/icon/logout.svg) no-repeat 50% 50%;
         mask: url(../../img/icon/logout.svg) no-repeat 50% 50%;
         background-repeat: no-repeat;
