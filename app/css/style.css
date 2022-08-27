@@ -656,6 +656,7 @@ button {
     width: 90%;
   }
   .store-header {
+    display: flex;
     flex-wrap: wrap;
   }
   .store-header__address {
@@ -743,11 +744,11 @@ button {
   .promo {
     padding: 20px;
   }
-  .restaurants__cards {
+  .restaurants {
     display: flex;
     flex-wrap: wrap;
   }
-  .menu__cards {
+  .menu {
     display: flex;
     flex-wrap: wrap;
   }

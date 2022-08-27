@@ -12,10 +12,6 @@ $lite-gray: #8c8c8c;
     margin-bottom: 44px;
 }
 
-%block-main {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 * {
     box-sizing: border-box;
@@ -745,6 +741,7 @@ $lite-gray: #8c8c8c;
     }
   
     .store-header {
+        display: flex;
         flex-wrap: wrap;
 
         &__address {
@@ -867,17 +864,13 @@ $lite-gray: #8c8c8c;
     }
 
     .restaurants {
-
-        &__cards {
-           @extend %block-main;
-        }
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .menu {
-
-        &__cards {
-            @extend %block-main;
-        }
+        display: flex;
+        flex-wrap: wrap;
     }
   
     .footer-block {
