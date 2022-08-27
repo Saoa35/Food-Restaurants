@@ -677,8 +677,16 @@ button {
   .menu__title {
     font-size: 20px;
   }
+  .menu__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .restaurants__title {
     font-size: 20px;
+  }
+  .restaurants__cards {
+    display: flex;
+    flex-wrap: wrap;
   }
   .card {
     flex-basis: 100%;
@@ -744,11 +752,11 @@ button {
   .promo {
     padding: 20px;
   }
-  .restaurants {
+  .restaurants__cards {
     display: flex;
     flex-wrap: wrap;
   }
-  .menu {
+  .menu__cards {
     display: flex;
     flex-wrap: wrap;
   }

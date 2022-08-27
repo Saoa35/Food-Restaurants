@@ -768,11 +768,19 @@ $lite-gray: #8c8c8c;
         &__title {
             font-size: 20px;
         }
+        &__cards{
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 
     .restaurants {
         &__title {
             font-size: 20px;
+        }
+        &__cards{
+            display: flex;
+            flex-wrap: wrap;
         }
     }
   
@@ -864,13 +872,17 @@ $lite-gray: #8c8c8c;
     }
 
     .restaurants {
-        display: flex;
-        flex-wrap: wrap;
+        &__cards{
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 
     .menu {
-        display: flex;
-        flex-wrap: wrap;
+        &__cards{
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
   
     .footer-block {
