@@ -116,7 +116,7 @@ button {
 .button-auth {
   background-position: 20px 13px;
 }
-.button-primary .button-auth-svg {
+/* .button-primary .button-auth-svg {
   width: 24px;
   height: 24px;
   background-color: #fff;
@@ -131,7 +131,7 @@ button {
   -webkit-mask: url("../../img/icon/shopping-cart.svg") no-repeat 50% 50%;
   mask: url("../../img/icon/shopping-cart.svg") no-repeat 50% 50%;
   background-repeat: no-repeat;
-}
+} */
 .button-primary .button-card-svg {
   background-color: #fff;
 }

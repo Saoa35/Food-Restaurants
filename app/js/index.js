@@ -1,11 +1,11 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyCfBYQHG3C7679PmQXlKEJstzB4xpcjHNs",
-  authDomain: "delivery-food-cad83.firebaseapp.com",
-  databaseURL: "https://delivery-food-cad83-default-rtdb.firebaseio.com",
-  projectId: "delivery-food-cad83",
-  storageBucket: "delivery-food-cad83.appspot.com",
-  messagingSenderId: "597132858859",
-  appId: "1:597132858859:web:6b1d9f246874b5eeb8b5ae"
+  apiKey: "AIzaSyC9ATZobvGyVUL2CcoTQMlZhB6zMyqiXGg",
+  authDomain: "delivery-food-2.firebaseapp.com",
+  databaseURL: "https://delivery-food-2-default-rtdb.firebaseio.com",
+  projectId: "delivery-food-2",
+  storageBucket: "delivery-food-2.appspot.com",
+  messagingSenderId: "711214449244",
+  appId: "1:711214449244:web:7487d03c644d833af95c99"
 };
 
   firebase.initializeApp(firebaseConfig);
