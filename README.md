@@ -1,6 +1,6 @@
 # Food-Restaurants
 This project creates a food ordering and delivery website with different types of restaurants and dishes. It was created using HTML5, CSS3, SCSS and JavaScript. 
-It also includes the JQuery and Slick libraries, the database was downloaded and received in JSON format from the Firebase platform.
+
 
 ![delivery-food-main_1](https://user-images.githubusercontent.com/78507597/193125945-9d0f1d04-a804-43e1-98c4-626b39dc1dc4.png)
 
