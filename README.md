@@ -1,5 +1,5 @@
 # Food-Restaurants
-This project creates a food ordering and delivery website with different types of restaurants and dishes. It was created using HTML5, CSS3, SCSS and JavaScript. 
+This is a food ordering and delivery website with different types of restaurants and dishes. In this project was implemented the ability to select a product, adding it to the cart, increasing or decreasing the quantity, visualization of the total price. It was created using HTML5, CSS3, SCSS, Firebase and JavaScript. 
 
 
 ![delivery-food-main_1](https://user-images.githubusercontent.com/78507597/193125945-9d0f1d04-a804-43e1-98c4-626b39dc1dc4.png)
